@@ -1,8 +1,6 @@
 # 🧦 loxiesockie
 
-My dog eats socks. Not chews- he *eats*!! This has resulted in multiple vet visits, one ER visit, and a household-wide sock paranoia. LoxieSockie is my attempt to solve this with computer vision and begin my first Raspberry Pi project.
-
-LoxieSockie is a real time detection system that runs on a Raspberry Pi 4 with a camera. When it spots my dog with a sock in his mouth, it sends a push notification to my phone so I can intervene before the sock disappears forever :(
+My dog <b>eats</b> socks. Not chews- he <b>eats</b>!! This has resulted in multiple vet visits, one ER visit, and a household-wide sock paranoia. LoxieSockie is my attempt to solve this with computer vision and begin my first Raspberry Pi project.
 
 
 ## How It Works
@@ -31,7 +29,7 @@ Camera → Pi 4 → YOLOv8n (NCNN) → Detection Logic → Push Notification
 | picamera2 | Camera interface | Python wrapper around `libcamera`, which is the low-level driver required by Camera Module 3 |
 | OpenCV | Frame processing | Resize frames, draw bounding boxes for debugging, save snapshot images. Installed automatically with Ultralytics |
 | Ntfy | Push notifications | Pi sends an HTTP POST, phone buzzes instantly bzzp bzzp |
-| SQLite | Local event logging | Felt like it was sufficient for a single device logging a few events per day. Can revisit later. |
+| SQLite | Local event logging | Felt like it was sufficient for a single device (ideally in a good world) logging a few events per month. Can revisit later. |
 
 ## Status
 
